@@ -3,48 +3,28 @@
   /* Цветовые переменные для темной темы */
   --heading-text: #db00ff;
   --section-title-color: #ff0070;
-  --font-family: "IBM Plex Mono", monospace;
   --bg-color: #000028;
   --accent-color: #ff0070;
-  --title-color: #db00ff;
   --text-color: #f1b2ce;
   --subtitle-color: #000028;
   --border-color: #ff0070;
   --border-bottom: #f1b2ce;
   --bg-image: url(../images/cover-image-dark.png);
-  --secondary-color: var(--color-purple, #ff007040);
-
-  /* Показываем декоративный элемент REC */
-  .decor {
-    display: block;
-  }
+  --secondary-color: rgba(255, 0, 112, 0.4);
 }
 
 /* Автоматическое применение темной темы при системных настройках */
 @media (prefers-color-scheme: dark) {
   :root {
-    --title-color: #db00ff;
     --heading-text: #db00ff;
-    --accent-color: #ff0070;
     --section-title-color: #ff0070;
-    --article-title-color: var(--background-color);
-    --article-text-color: var(--title-shadow);
-    --subtitle-color: #000028;
-    --link-shadow: var(--title-shadow);
     --bg-color: #000028;
-    --border-bottom: #f1b2ce;
+    --accent-color: #ff0070;
     --text-color: #f1b2ce;
+    --subtitle-color: #000028;
     --border-color: #ff0070;
-    --section-title-color: var(--title-shadow);
-    --title-decor: var(--title-shadow);
-    --rec-color: var(--title-shadow);
+    --border-bottom: #f1b2ce;
     --bg-image: url(../images/cover-image-dark.png);
-    --secondary-color: var(--color-purple, #ff007040);
-    --font-family: "IBM Plex Mono", monospace;
-
-    /* Показываем декоративный элемент REC */
-    .decor {
-      display: block;
-    }
+    --secondary-color: rgba(255, 0, 112, 0.4);
   }
 }

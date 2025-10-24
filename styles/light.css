@@ -9,32 +9,29 @@
   --article-title-color: #353430;
   --border-color: #353430;
   --border-bottom: #353430;
-  --section-article-text: #353430;
   --heading-text: #ffc2e6;
   --bg-image: url(../images/cover-image-light.png);
-  --secondary-color: var(--color-black, #35343040);
-  
-  /* Фон страницы */
-  .page {
-    background-image: var(--bg-image);
-    background-color: #fff1f7;
-  }
+  --secondary-color: rgba(50, 49, 45, 0.4); /* #32312D с прозрачностью 40% */
+}
 
+/* Автоматическое применение светлой темы при системных настройках */
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #ff8dcb;
+    --bg-color: #fff1f7;
+    --subtitle-color: #353430;
+    --text-color: #353430;
+    --section-title-color: #353430;
+    --article-title-color: #353430;
+    --border-color: #353430;
+    --border-bottom: #353430;
+    --heading-text: #ffc2e6;
+    --bg-image: url(../images/cover-image-light.png);
+    --secondary-color: rgba(50, 49, 45, 0.4);
+  }
+  
   /* Скрываем декоративный элемент REC в светлой теме */
   .decor {
     display: none;
-  }
-
-  /* Адаптация для мобильных устройств */
-  @media (min-width: 320px) and (max-width: 768px) {
-    .header__title {
-      color: var(--heading-text);
-      text-shadow: 4px 4px 0px var(--accent-color);
-    }
-
-    .footer__title {
-      color: var(--heading-text);
-      text-shadow: 2px 2px 0px var(--accent-color);
-    }
   }
 }
