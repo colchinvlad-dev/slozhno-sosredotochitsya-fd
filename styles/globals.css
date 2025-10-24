@@ -1,42 +1,53 @@
-/* Глобальные стили для проекта, их можно дополнять и менять по желанию */
-
+/* Глобальные стили и сброс стандартных настроек */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: border-box; /* Упрощает расчет размеров элементов */
 }
 
+/* Основные настройки body */
 body {
-  min-inline-size: 375px;
-  max-inline-size: 1440px;
-  margin: 0 auto;
+  min-inline-size: 375px;  /* Минимальная ширина для мобильных */
+  max-inline-size: 1440px; /* Максимальная ширина для десктопов */
+  margin: 0 auto;          /* Центрирование контента */
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+/* Сброс отступов для заголовков и параграфов */
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
+/* Сброс стилей для списков */
 ul {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style: none; /* Убираем маркеры */
 }
 
+/* Сброс для picture */
 picture {
   margin: 0;
   padding: 0;
 }
 
-button,
-a {
-  color: currentColor;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+/* Наследование стилей для кнопок и ссылок */
+button, a {
+  color: currentColor;     /* Наследование цвета текста */
+  font-family: inherit;    /* Наследование шрифта */
+  font-size: inherit;      /* Наследование размера шрифта */
+  line-height: inherit;    /* Наследование межстрочного интервала */
+}
+
+/* Сброс стандартных стилей кнопок */
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer; /* Указатель при наведении */
+}
+
+/* Улучшение доступности для фокуса */
+:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 2px; /* Отступ для лучшей видимости */
 }
