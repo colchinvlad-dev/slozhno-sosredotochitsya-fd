@@ -11,7 +11,7 @@
   --border-bottom: #f1b2ce;
   --bg-image: url(../images/cover-image-dark.png);
   --secondary-color: rgba(255, 0, 112, 0.4);
-  --article-title-color: #000028; /* Добавьте эту строку */
+  --article-title-color: #000028; 
 }
 
 /* Автоматическое применение темной темы при системных настройках */
