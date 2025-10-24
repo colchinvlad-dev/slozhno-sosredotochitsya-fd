@@ -4,16 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Поддержка темной и светлой темы на уровне ОС -->
     <meta name="color-scheme" content="dark light" />
     <title>Сложно сосредоточиться</title>
     
-    <!-- Favicon для разных устройств и форматов -->
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
     
-    <!-- Подключение стилей -->
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -23,9 +20,7 @@
   </head>
   
   <body class="page">
-    <!-- Шапка сайта с декоративными углами -->
     <header class="header decorated-zone">
-      <!-- Навигация для переключения тем -->
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -34,7 +29,6 @@
             </button>
           </li>
           <li class="header__theme-menu-item">
-            <!-- Кнопка авто-темы активна по умолчанию -->
             <button class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto" disabled>
               авто
             </button>
@@ -47,34 +41,29 @@
         </ul>
       </nav>
       
-      <!-- Главный заголовок -->
       <h1 class="header__title">no focus</h1>
       
-      <!-- Подзаголовок с выделением -->
       <p class="header__text text-decor">
         Что делать, когда не можешь делать ничего<br>
         Или почему нам так сложно сконцентрироваться, особенно когда очень надо
       </p>
       
-      <!-- Декоративный элемент "REC" -->
       <span class="decor" aria-hidden="true"></span>
     </header>
     
-    <!-- Основное содержимое -->
     <main class="main">
-      <!-- Секция о сложностях концентрации -->
       <section class="content__section focus">
         <h2 class="title content__title">Почему сосредоточиться так сложно</h2>
         <div class="focus__container">
           <article class="article">
-            <h3 class="section__article__title text-decor">Многозадачность</h3>
+            <h3 class="article__title text-decor">Многозадачность</h3>
             <p class="article__text">
               Особенно сложно сосредоточиться, когда задач много и все они —
               важные. Где же легендарная многозадачность, когда она так нужна
               вам (и всем нанимающим менеджерам этого мира)? А дело в том, что
               её просто не существует. Исследователи
               <a href="https://www.dana.org/article/multicosts-of-multitasking/"
-                 class="section__article-text-link"
+                 class="article__link"
                  target="_blank">выяснили</a>,
               что мозгу тяжело концентрироваться даже на двух делах
               одновременно. А когда в поле внимания попадает несколько важных
@@ -84,7 +73,7 @@
             </p>
           </article>
           <article class="article">
-            <h3 class="section__article__title text-decor">Дофамин</h3>
+            <h3 class="article__title text-decor">Дофамин</h3>
             <p class="article__text">
               С гормонами стресса всё понятно, но дальше — ещё интереснее. В
               нашей невозможности сосредоточиться замешана и полная
@@ -99,12 +88,11 @@
         </div>
       </section>
       
-      <!-- Секция о факторах снижения концентрации -->
       <section class="content__section concentrate">
         <h2 class="title content__title">Что снижает концентрацию внимания?</h2>
         <div class="concentrate__container">
           <article class="article">
-            <h3 class="section__article__title text-decor">Стресс</h3>
+            <h3 class="article__title text-decor">Стресс</h3>
             <p class="article__text">
               Как концентрация может снижаться из-за… концентрации? Любая
               стрессовая ситуация (и резко меняющийся мир в целом) заставляет
@@ -115,7 +103,7 @@
             </p>
           </article>
           <article class="article">
-            <h3 class="section__article__title text-decor">Еда</h3>
+            <h3 class="article__title text-decor">Еда</h3>
             <p class="article__text">
               «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
               доставляют в мозг энергию и помогают ему лучше работать. Но уходит
@@ -126,7 +114,7 @@
             </p>
           </article>
           <article class="article">
-            <h3 class="section__article__title text-decor">Гаджеты</h3>
+            <h3 class="article__title text-decor">Гаджеты</h3>
             <p class="article__text">
               Да-да, это та самая ситуация, когда на экране ноутбука — код, в
               наушниках — подкаст, а на компьютере фоном — ещё и видео с
@@ -140,7 +128,6 @@
         </div>
       </section>
       
-      <!-- Секция с советами по улучшению концентрации -->
       <section class="content__section concentrate-better">
         <h2 class="title content__title">
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
@@ -153,7 +140,7 @@
           <ul class="article__list">
             <li class="article__list-item">
               <article class="article">
-                <h4 class="section__article__title text-decor">
+                <h4 class="article__title text-decor">
                   Представьте небо и облака
                 </h4>
                 <p class="article__text">
@@ -170,7 +157,7 @@
             </li>
             <li class="article__list-item">
               <article class="article"> 
-                <h4 class="section__article__title text-decor">Включите музыку</h4>
+                <h4 class="article__title text-decor">Включите музыку</h4>
                 <p class="article__text">
                   Но не любую, и не любимую. Любимая может быть связана с сильными
                   положительными эмоциями, которые тоже очень сильно отвлекают.
@@ -181,16 +168,16 @@
             </li>
             <li class="article__list-item">
               <article class="article"> 
-                <h4 class="section__article__title text-decor">Прогуляйтесь</h4>
+                <h4 class="article__title text-decor">Прогуляйтесь</h4>
                 <p class="article__text">
                   Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
                   <a href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328"
-                     class="section__article-text-link"
+                     class="article__link"
                      target="_blank">показал</a>,
                   что созерцание природы повышает концентрацию, в то время как
                   после просмотра городских пейзажей она наоборот понижается.
                   Можно совместить прогулку с физическими упражнениями или бегом —
-                  так в мозг посту                   пит ещё больше кислорода и он будет лучше
+                  так в мозг поступит ещё больше кислорода и он будет лучше
                   работать. Но и простая двадцатиминутная прогулка — тоже отличный
                   вариант.
                 </p>
@@ -198,7 +185,7 @@
             </li>
             <li class="article__list-item">
               <article class="article">
-                <h4 class="section__article__title text-decor">Хорошо ешьте</h4>
+                <h4 class="article__title text-decor">Хорошо ешьте</h4>
                 <p class="article__text">
                   Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
                   которые препятствуют резким скачкам сахара в крови. Например, с
@@ -210,7 +197,7 @@
             </li>
             <li class="article__list-item">
               <article class="article">
-                <h4 class="section__article__title text-decor">Читайте</h4>
+                <h4 class="article__title text-decor">Читайте</h4>
                 <p class="article__text">
                   Настоящие бумажные книги. Это правда помогает с концентрацией:
                   чтобы прочитать пост в соцсети, достаточно нескольких минут или
@@ -223,7 +210,6 @@
         </div>
       </section>
       
-      <!-- Галерея изображений -->
       <section class="section">
         <h2 class="section__title dark-title title-decor">
           А можно в картинках?
@@ -251,12 +237,10 @@
       </section>
     </main>
     
-    <!-- Подвал сайта -->
     <footer class="footer decorated-zone">
       <h2 class="footer__title">focus</h2>
     </footer>
     
-    <!-- Подключение JavaScript -->
     <script src="./scripts/script.js"></script>
   </body>
 </html>
