@@ -11,12 +11,7 @@
   --bg-image: url(../images/cover-image-light.png);
   --secondary-color: rgba(50, 49, 45, 0.4);
   --main-text-color: #353430;
-  --article-title-color: var(--main-text-color);
+  --article-title-color: var(--main-text-color); 
   --section-title-color: var(--main-text-color);
   --transition-duration: 0.3s;
-}
-
-/* Скрываем декоративный элемент по умолчанию */
-.decor {
-  display: none;
 }

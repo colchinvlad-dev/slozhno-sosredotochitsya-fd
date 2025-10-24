@@ -18,18 +18,20 @@
   position: absolute;
   right: 28px;
   top: 20px;
-  display: none; /* По умолчанию скрыт */
+  display: none;
+  align-items: center;
+  gap: 10px;
 }
 
 /* Показываем REC только в темной теме */
 .page.theme_dark .decor {
-  display: block;
+  display: flex;
 }
 
 /* В автоматическом режиме показываем REC только при системной темной теме */
 @media (prefers-color-scheme: dark) {
   .page.theme_auto .decor {
-    display: block;
+    display: flex;
   }
 }
 
@@ -39,9 +41,8 @@
   color: var(--subtitle-color, #000028);
 }
 
-/* Текст "REC" и точка вместе */
+/* Текст "REC" */
 .decor::before {
-  position: relative;
   content: "REC";
   text-transform: uppercase;
   color: var(--accent-color, #ff0070);
@@ -49,20 +50,17 @@
   line-height: 25px;
   font-size: 18px;
   font-family: var(--font-family, "IBM Plex Mono", monospace);
-  padding-right: 28px;
 }
 
 /* Круглый индикатор */
 .decor::after {
-  position: absolute;
   content: "";
-  top: 8px;
-  right: 9px;
   border-radius: 50%;
   box-shadow: 0 0 4px 2px var(--accent-color, #ff0070);
   background-color: var(--accent-color, #ff0070);
   width: 9px;
   height: 9px;
+  flex-shrink: 0;
 }
 
 /* Хедер */
@@ -285,6 +283,10 @@
 
 .gallery__title {
   margin-block-end: 20px;
+  color: var(--subtitle-color, #000028);
+  background-color: var(--accent-color, #ff0070);
+  font-size: 18px; /* Добавляем явное указание размера шрифта */
+  font-weight: 700; /* Явно указываем жирное начертание */
 }
 
 .gallery__container {
@@ -386,15 +388,19 @@
   .decor {
     right: 18px;
     top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 
   .decor::before {
-    padding-right: 28px;
+    padding-right: 0;
   }
 
   .decor::after {
-    right: 9px;
-    top: 8px;
+    position: static;
+    right: auto;
+    top: auto;
   }
 
   .section {
