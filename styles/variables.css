@@ -1,4 +1,4 @@
-/* CSS переменные для светлой темы по умолчанию */ 
+/* CSS переменные для светлой темы по умолчанию */
 :root {
   --font-family: "IBM Plex Mono", monospace;
   --heading-text: #ffc2e6;
@@ -9,9 +9,16 @@
   --bg-color: #fff1f7;
   --subtitle-color: #353430;
   --bg-image: url(../images/cover-image-light.png);
-  --secondary-color: rgba(50, 49, 45, 0.4);
+  --secondary-color: var(--color-black, #35343040);
   --main-text-color: #353430;
-  --article-title-color: var(--main-text-color); 
+  --article-title-color: var(--main-text-color);
   --section-title-color: var(--main-text-color);
+  --link-shadow: var(--title-color);
+  --rec-color: var(--background-color);
   --transition-duration: 0.3s;
+}
+
+/* Скрываем декоративный элемент по умолчанию */
+.decor {
+  display: none;
 }
