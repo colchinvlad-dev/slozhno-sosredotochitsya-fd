@@ -13,9 +13,12 @@
   font-weight: 400;
 }
 
-/* Скрываем декоративный элемент REC по умолчанию (для светлой темы) */
+/* Декоративный элемент */
 .decor {
-  display: none;
+  position: absolute;
+  right: 28px;
+  top: 20px;
+  display: none; /* По умолчанию скрыт */
 }
 
 /* Показываем REC только в темной теме */
@@ -23,10 +26,43 @@
   display: block;
 }
 
+/* В автоматическом режиме показываем REC только при системной темной теме */
 @media (prefers-color-scheme: dark) {
-  .decor {
+  .page.theme_auto .decor {
     display: block;
   }
+}
+
+/* Класс для выделенного текста */
+.text-decor {
+  background-color: var(--accent-color, #ff0070);
+  color: var(--subtitle-color, #000028);
+}
+
+/* Текст "REC" и точка вместе */
+.decor::before {
+  position: relative;
+  content: "REC";
+  text-transform: uppercase;
+  color: var(--accent-color, #ff0070);
+  font-weight: 400;
+  line-height: 25px;
+  font-size: 18px;
+  font-family: var(--font-family, "IBM Plex Mono", monospace);
+  padding-right: 28px;
+}
+
+/* Круглый индикатор */
+.decor::after {
+  position: absolute;
+  content: "";
+  top: 8px;
+  right: 9px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--accent-color, #ff0070);
+  background-color: var(--accent-color, #ff0070);
+  width: 9px;
+  height: 9px;
 }
 
 /* Хедер */
@@ -102,45 +138,6 @@
   cursor: default;
   border-color: currentColor;
   pointer-events: none;
-}
-
-/* Декоративный элемент */
-.decor {
-  position: absolute;
-  right: 28px;
-  top: 20px;
-}
-
-/* Класс для выделенного текста */
-.text-decor {
-  background-color: var(--accent-color, #ff0070);
-  color: var(--subtitle-color, #000028);
-}
-
-/* Текст "REC" и точка вместе */
-.decor::before {
-  position: relative;
-  content: "REC";
-  text-transform: uppercase;
-  color: var(--accent-color, #ff0070);
-  font-weight: 400;
-  line-height: 25px;
-  font-size: 18px;
-  font-family: var(--font-family, "IBM Plex Mono", monospace);
-  padding-right: 28px;
-}
-
-/* Круглый индикатор */
-.decor::after {
-  position: absolute;
-  content: "";
-  top: 8px;
-  right: 9px;
-  border-radius: 50%;
-  box-shadow: 0 0 4px 2px var(--accent-color, #ff0070);
-  background-color: var(--accent-color, #ff0070);
-  width: 9px;
-  height: 9px;
 }
 
 /* Декоративные углы */
