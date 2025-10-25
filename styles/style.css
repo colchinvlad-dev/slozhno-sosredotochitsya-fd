@@ -486,13 +486,18 @@
     justify-self: end;
     align-self: center; /* ИЗМЕНЕНО: было end, стало center */
     margin-block-start: 0;
-    padding-bottom: 20px;
+    padding-bottom: 0; /* УБРАНО: лишний отступ снизу */
   }
   
   .header__theme-menu-list {
     flex-direction: column;
-    gap: 13px;
+    gap: 10px;
     align-items: flex-end;
+  }
+
+    /* ИСПРАВЛЕНИЕ: расстояние между кнопками */
+  .header__theme-menu-item {
+    margin-bottom: 0; /* Убедимся, что нет лишних отступов */
   }
 
   .header__title {

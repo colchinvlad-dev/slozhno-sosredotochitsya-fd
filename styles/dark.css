@@ -10,7 +10,7 @@
   --border-color: #ff0070;
   --border-bottom: #f1b2ce;
   --bg-image: url(../images/cover-image-dark.png);
-  --secondary-color: #ff007040;
+  --secondary-color: #ff007066; /* Исправлено: 40% = 66 в hex */
 
   /* Показываем декоративный элемент REC */
   .decor {
@@ -30,7 +30,7 @@
     --border-color: #ff0070;
     --bg-color: #000028;
     --bg-image: url(../images/cover-image-dark.png);
-    --secondary-color: #ff007040;
+    --secondary-color: #ff007066; /* Исправлено: 40% = 66 в hex */
 
     /* Показываем декоративный элемент REC ТОЛЬКО для темной темы */
     .decor {
@@ -39,12 +39,4 @@
   }
 }
 
-/* СКРЫВАЕМ REC ДЛЯ СВЕТЛОЙ ТЕМЫ В РЕЖИМЕ АВТО */
-@media (prefers-color-scheme: light) {
-  :root {
-    /* Скрываем декоративный элемент REC для светлой темы */
-    .decor {
-      display: none;
-    }
-  }
-}
+/* УДАЛЕНО: Стили для светлой темы перенесены в light.css */
